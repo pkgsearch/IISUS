@@ -1,11 +1,12 @@
 apt update
 apt upgrade
 apt install git python
+rm /data/data/com.termux/files/usr/bin/iisus 
 git clone https://github.com/batyarimskiy/IISUS 
 cd IISUS 
 pip install -r requirements.txt 
-mv iisus
 chmod +x iisus
+mv iisus /data/data/com.termux/files/usr/bin
 echo "Установка прошла успешно! Запуск из любой директории iisus"
-rm install
+rm tiisus
 
